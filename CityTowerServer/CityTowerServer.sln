@@ -1,0 +1,41 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2035
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CityTowerServer", "CityTowerServer\CityTowerServer.csproj", "{149D6F6D-3164-431F-8FE7-4FD765BF771D}"
+	ProjectSection(ProjectDependencies) = postProject
+		{9A633580-F854-4C16-8C10-FF60211D1686} = {9A633580-F854-4C16-8C10-FF60211D1686}
+		{8D7AAF85-D2AF-425A-963E-34026069635E} = {8D7AAF85-D2AF-425A-963E-34026069635E}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataAccessLayer", "DataAccessLayer\DataAccessLayer.csproj", "{8D7AAF85-D2AF-425A-963E-34026069635E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CityTowerWebAPI", "CityTowerWebAPI\CityTowerWebAPI.csproj", "{9A633580-F854-4C16-8C10-FF60211D1686}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{149D6F6D-3164-431F-8FE7-4FD765BF771D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{149D6F6D-3164-431F-8FE7-4FD765BF771D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{149D6F6D-3164-431F-8FE7-4FD765BF771D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{149D6F6D-3164-431F-8FE7-4FD765BF771D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8D7AAF85-D2AF-425A-963E-34026069635E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8D7AAF85-D2AF-425A-963E-34026069635E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8D7AAF85-D2AF-425A-963E-34026069635E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8D7AAF85-D2AF-425A-963E-34026069635E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9A633580-F854-4C16-8C10-FF60211D1686}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9A633580-F854-4C16-8C10-FF60211D1686}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9A633580-F854-4C16-8C10-FF60211D1686}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9A633580-F854-4C16-8C10-FF60211D1686}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8C927FD2-1EB5-40D8-A9DD-49AD373579CA}
+	EndGlobalSection
+EndGlobal
