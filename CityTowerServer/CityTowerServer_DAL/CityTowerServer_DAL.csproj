@@ -1,0 +1,121 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{28847DD6-3F33-400A-A1D8-C35537A45A24}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CityTowerServer_DAL</RootNamespace>
+    <AssemblyName>CityTowerServer_DAL</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Interfaces\ICountryListRepository.cs" />
+    <Compile Include="Interfaces\IRepository.cs" />
+    <Compile Include="Interfaces\IUnitOfWork.cs" />
+    <Compile Include="Models\All_chat.cs" />
+    <Compile Include="Models\Announcement.cs" />
+    <Compile Include="Models\Announcement_category_list.cs" />
+    <Compile Include="Models\Announcement_tag.cs" />
+    <Compile Include="Models\Auctioneer.cs" />
+    <Compile Include="Models\Auctioneer_category_list.cs" />
+    <Compile Include="Models\Auctioneer_history.cs" />
+    <Compile Include="Models\Auctioneer_tag.cs" />
+    <Compile Include="Models\Blog_category_list.cs" />
+    <Compile Include="Models\Blog_list.cs" />
+    <Compile Include="Models\Blog_post_comments.cs" />
+    <Compile Include="Models\Blog_post_comments_tag.cs" />
+    <Compile Include="Models\Blog_post_table.cs" />
+    <Compile Include="Models\Blog_post_tag.cs" />
+    <Compile Include="Models\Blog_status_list.cs" />
+    <Compile Include="Models\Blog_user_table.cs" />
+    <Compile Include="Models\Chat_tag.cs" />
+    <Compile Include="Models\CityTowerDataBase.cs" />
+    <Compile Include="Models\City_list.cs" />
+    <Compile Include="Models\Comments_announcement.cs" />
+    <Compile Include="Models\Comments_announcement_tag.cs" />
+    <Compile Include="Models\Comments_eshop.cs" />
+    <Compile Include="Models\Comments_news.cs" />
+    <Compile Include="Models\Comments_news_tag.cs" />
+    <Compile Include="Models\Comments_places.cs" />
+    <Compile Include="Models\Comments_places_tag.cs" />
+    <Compile Include="Models\Comments_poster.cs" />
+    <Compile Include="Models\Comments_poster_tag.cs" />
+    <Compile Include="Models\Country_list.cs" />
+    <Compile Include="Models\Goods_category_list.cs" />
+    <Compile Include="Models\Goods_photo_id.cs" />
+    <Compile Include="Models\Goods_tag.cs" />
+    <Compile Include="Models\Language_list.cs" />
+    <Compile Include="Models\Like_dislike_list.cs" />
+    <Compile Include="Models\News.cs" />
+    <Compile Include="Models\News_category_list.cs" />
+    <Compile Include="Models\News_tag.cs" />
+    <Compile Include="Models\Online_list.cs" />
+    <Compile Include="Models\Places.cs" />
+    <Compile Include="Models\Places_category_list.cs" />
+    <Compile Include="Models\Places_tag.cs" />
+    <Compile Include="Models\Poster.cs" />
+    <Compile Include="Models\Poster_category_list.cs" />
+    <Compile Include="Models\Poster_tag.cs" />
+    <Compile Include="Models\Room_chat_id.cs" />
+    <Compile Include="Models\Sex_list.cs" />
+    <Compile Include="Models\Shop.cs" />
+    <Compile Include="Models\Shop_goods_list.cs" />
+    <Compile Include="Models\Skin_list.cs" />
+    <Compile Include="Models\Status_list.cs" />
+    <Compile Include="Models\Sys_message.cs" />
+    <Compile Include="Models\Tag_list.cs" />
+    <Compile Include="Models\Users.cs" />
+    <Compile Include="Models\User_settings.cs" />
+    <Compile Include="Models\User_tag.cs" />
+    <Compile Include="Models\User_use_tag.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repositories\CountryListRepository.cs" />
+    <Compile Include="Repositories\Repository.cs" />
+    <Compile Include="Repositories\UnitOfWork.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

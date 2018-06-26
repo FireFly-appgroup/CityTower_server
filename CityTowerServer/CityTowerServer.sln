@@ -3,15 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27703.2035
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CityTowerServer", "CityTowerServer\CityTowerServer.csproj", "{149D6F6D-3164-431F-8FE7-4FD765BF771D}"
-	ProjectSection(ProjectDependencies) = postProject
-		{9A633580-F854-4C16-8C10-FF60211D1686} = {9A633580-F854-4C16-8C10-FF60211D1686}
-		{8D7AAF85-D2AF-425A-963E-34026069635E} = {8D7AAF85-D2AF-425A-963E-34026069635E}
-	EndProjectSection
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CityTowerServer_DAL", "CityTowerServer_DAL\CityTowerServer_DAL.csproj", "{28847DD6-3F33-400A-A1D8-C35537A45A24}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataAccessLayer", "DataAccessLayer\DataAccessLayer.csproj", "{8D7AAF85-D2AF-425A-963E-34026069635E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CityTowerServer_API", "CityTowerServer_API\CityTowerServer_API.csproj", "{2AFC82E8-09C4-4267-8355-31769F07DA44}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CityTowerWebAPI", "CityTowerWebAPI\CityTowerWebAPI.csproj", "{9A633580-F854-4C16-8C10-FF60211D1686}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CityTowerServer", "CityTowerServer\CityTowerServer.csproj", "{44E78116-F71F-4A24-B3FC-0BBCE6C2EB34}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -19,18 +15,18 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{149D6F6D-3164-431F-8FE7-4FD765BF771D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{149D6F6D-3164-431F-8FE7-4FD765BF771D}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{149D6F6D-3164-431F-8FE7-4FD765BF771D}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{149D6F6D-3164-431F-8FE7-4FD765BF771D}.Release|Any CPU.Build.0 = Release|Any CPU
-		{8D7AAF85-D2AF-425A-963E-34026069635E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{8D7AAF85-D2AF-425A-963E-34026069635E}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{8D7AAF85-D2AF-425A-963E-34026069635E}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{8D7AAF85-D2AF-425A-963E-34026069635E}.Release|Any CPU.Build.0 = Release|Any CPU
-		{9A633580-F854-4C16-8C10-FF60211D1686}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{9A633580-F854-4C16-8C10-FF60211D1686}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{9A633580-F854-4C16-8C10-FF60211D1686}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{9A633580-F854-4C16-8C10-FF60211D1686}.Release|Any CPU.Build.0 = Release|Any CPU
+		{28847DD6-3F33-400A-A1D8-C35537A45A24}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{28847DD6-3F33-400A-A1D8-C35537A45A24}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{28847DD6-3F33-400A-A1D8-C35537A45A24}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{28847DD6-3F33-400A-A1D8-C35537A45A24}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2AFC82E8-09C4-4267-8355-31769F07DA44}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2AFC82E8-09C4-4267-8355-31769F07DA44}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2AFC82E8-09C4-4267-8355-31769F07DA44}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2AFC82E8-09C4-4267-8355-31769F07DA44}.Release|Any CPU.Build.0 = Release|Any CPU
+		{44E78116-F71F-4A24-B3FC-0BBCE6C2EB34}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{44E78116-F71F-4A24-B3FC-0BBCE6C2EB34}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{44E78116-F71F-4A24-B3FC-0BBCE6C2EB34}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{44E78116-F71F-4A24-B3FC-0BBCE6C2EB34}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
