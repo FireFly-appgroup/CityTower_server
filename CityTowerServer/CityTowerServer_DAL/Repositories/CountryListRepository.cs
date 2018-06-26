@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Linq;
 using CityTowerServer_DAL.Models;
 using DataAccessLayer.Interfaces;
 
@@ -12,7 +13,7 @@ namespace DataAccessLayer.Repositories
 
         public IEnumerable<Country_list> GetListOfCountry()
         {
-            return CityTowerDB.Country_list;
+            return CityTowerDB.Country_list.ToList();
         }
 
         public CityTowerDataBase CityTowerDB

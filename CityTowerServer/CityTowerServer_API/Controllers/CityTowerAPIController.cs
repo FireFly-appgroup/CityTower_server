@@ -13,6 +13,9 @@ namespace CityTowerServer_API.Controllers
             using (var unitOfWork = new UnitOfWork(new CityTowerDataBase()))
             {
                 var CountryList = unitOfWork.CountryList;
+                if (CountryList == null)
+                    return NotFound();
+                else
                 return Ok(CountryList);
             }
         }

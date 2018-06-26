@@ -1,4 +1,6 @@
-﻿using CityTowerServer_DAL.Models;
+﻿using CityTowerServer_DAL.Interfaces;
+using CityTowerServer_DAL.Models;
+using CityTowerServer_DAL.Repositories;
 using DataAccessLayer.Interfaces;
 
 namespace DataAccessLayer.Repositories
@@ -11,9 +13,11 @@ namespace DataAccessLayer.Repositories
         {
             _context = context;
             CountryList = new CountryListRepository(_context);
+            CategoryNewsList = new NewsCategoryListRepository(_context);
         }
 
         public ICountryListRepository CountryList { get; private set; }
+        public INewsCategoryListRepository CategoryNewsList { get; private set; }
 
         public int Complete()
         {
