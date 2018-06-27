@@ -1,6 +1,5 @@
 ﻿using DataAccessLayer.Repositories;
 using System.Web.Http;
-using CityTowerServer_API.Interfaces;
 using CityTowerServer_DAL.Models;
 
 namespace CityTowerServer_API.Controllers
