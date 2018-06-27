@@ -1,5 +1,6 @@
 ﻿using DataAccessLayer.Repositories;
 using System.Web.Http;
+using CityTowerServer_API.Interfaces;
 using CityTowerServer_DAL.Models;
 
 namespace CityTowerServer_API.Controllers
@@ -10,14 +11,12 @@ namespace CityTowerServer_API.Controllers
         [Route("api/countrylist")]
         public IHttpActionResult Get()
         {
-            using (var unitOfWork = new UnitOfWork(new CityTowerDataBase()))
-            {
-                var CountryList = unitOfWork.CountryList;
+                var UnitOfWork = new UnitOfWork(new CityTowerDataBase());
+                var CountryList = UnitOfWork.CountryList.GetListOfCountry();
                 if (CountryList == null)
                     return NotFound();
                 else
                 return Ok(CountryList);
-            }
         }
     }
 }
