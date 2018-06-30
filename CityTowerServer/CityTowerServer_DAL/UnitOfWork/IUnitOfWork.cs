@@ -9,6 +9,5 @@ namespace CityTowerServer_DAL.UnitOfWork
         IGenericRepository<Country_list> CountryRepository { get; }
         IGenericRepository<News_category_list> NewsRepository { get; }
         void Save();
-
     }
 }

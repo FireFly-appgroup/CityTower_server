@@ -1,9 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Linq.Expressions;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace CityTowerServer_DAL.Repository
 {
@@ -21,6 +18,5 @@ namespace CityTowerServer_DAL.Repository
         bool SaveChanges(TEntity entity);
         void Update(TEntity item);
         TEntity FindById(int id);
-
     }
 }
