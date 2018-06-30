@@ -235,6 +235,10 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\CityTowerServer_BLL\CityTowerServer_BLL.csproj">
+      <Project>{B34E2E28-446C-40C9-8A4D-868713355C6F}</Project>
+      <Name>CityTowerServer_BLL</Name>
+    </ProjectReference>
     <ProjectReference Include="..\CityTowerServer_DAL\CityTowerServer_DAL.csproj">
       <Project>{28847dd6-3f33-400a-a1d8-c35537a45a24}</Project>
       <Name>CityTowerServer_DAL</Name>

@@ -1,29 +1,22 @@
-﻿using DataAccessLayer.Repositories;
-using System.Web.Http;
-using CityTowerServer_DAL.Models;
-using DataAccessLayer.Interfaces;
+﻿using System.Web.Http;
+using CityTowerServer_BLL.Services;
 
 namespace CityTowerServer_API.Controllers
 {
     public class CityTowerAPIController : ApiController
     {
-        private ICountryListRepository CountryListRepository;
+        private ICountryListService CountryListService;
 
-        public CityTowerAPIController()
+        public CityTowerAPIController(ICountryListService CountryListService)
         {
-            this.CountryListRepository = new CountryListRepository(new CityTowerDataBase());
-        }
-
-        public CityTowerAPIController(ICountryListRepository CountryListRepository)
-        {
-            this.CountryListRepository = CountryListRepository;
+            this.CountryListService = CountryListService;
         }
 
         [HttpGet]
         [Route("api/countrylist")]
         public IHttpActionResult Get()
         {
-                var CountryList = CountryListRepository.GetListOfCountry();
+                var CountryList = CountryListService.GetListOfCountry();
                 if (CountryList == null)
                     return NotFound();
                 else

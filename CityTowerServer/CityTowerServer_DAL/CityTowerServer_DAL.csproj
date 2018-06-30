@@ -49,10 +49,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Interfaces\ICountryListRepository.cs" />
-    <Compile Include="Interfaces\INewsCategoryListRepository.cs" />
-    <Compile Include="Interfaces\IRepository.cs" />
-    <Compile Include="Interfaces\IUnitOfWork.cs" />
     <Compile Include="Models\All_chat.cs" />
     <Compile Include="Models\Announcement.cs" />
     <Compile Include="Models\Announcement_category_list.cs" />
@@ -110,10 +106,10 @@
     <Compile Include="Models\User_tag.cs" />
     <Compile Include="Models\User_use_tag.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Repositories\CountryListRepository.cs" />
-    <Compile Include="Repositories\NewsCategoryListRepository.cs" />
-    <Compile Include="Repositories\Repository.cs" />
-    <Compile Include="Repositories\UnitOfWork.cs" />
+    <Compile Include="Repository\GenericRepository.cs" />
+    <Compile Include="Repository\IGenericRepository.cs" />
+    <Compile Include="UnitOfWork\IUnitOfWork.cs" />
+    <Compile Include="UnitOfWork\UnitOfWork.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
