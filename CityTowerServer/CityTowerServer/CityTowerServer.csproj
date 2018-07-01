@@ -48,5 +48,11 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CityTowerServer_API\CityTowerServer_API.csproj">
+      <Project>{2AFC82E8-09C4-4267-8355-31769F07DA44}</Project>
+      <Name>CityTowerServer_API</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
