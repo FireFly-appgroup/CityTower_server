@@ -5,10 +5,13 @@ using Autofac;
 using Autofac.Integration.WebApi;
 using CityTowerServer_API;
 using CityTowerServer_BLL.Services;
+using CityTowerServer_DAL.Entities;
 using CityTowerServer_DAL.Models;
 using CityTowerServer_DAL.Repository;
 using CityTowerServer_DAL.UnitOfWork;
+using Microsoft.AspNet.Identity;
 using Microsoft.Owin;
+using Microsoft.Owin.Security.Cookies;
 using Owin;
 
 [assembly: OwinStartup(typeof(Startup))]
@@ -18,6 +21,14 @@ namespace CityTowerServer_API
     {
         public void Configuration(IAppBuilder app)
         {
+            app.CreatePerOwinContext<ApplicationContext>(ApplicationContext.Create);
+            app.CreatePerOwinContext<ApplicationUserManager>(ApplicationUserManager.Create);
+            app.UseCookieAuthentication(new CookieAuthenticationOptions
+            {
+                AuthenticationType = DefaultAuthenticationTypes.ApplicationCookie,
+                LoginPath = new PathString("/Account/Login"),
+            });
+
             HttpConfiguration configugation = new HttpConfiguration();
             var builder = new ContainerBuilder();
 
